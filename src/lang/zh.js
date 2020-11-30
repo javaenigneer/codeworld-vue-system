@@ -136,7 +136,8 @@ export default {
     cancel: '取 消',
     confirm: '确 定',
     enable: '启用',
-    disable: '停用'
+    disable: '停用',
+    offline: '下线'
   },
   errorLog: {
     tips: '请点击右上角bug小图标',

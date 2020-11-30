@@ -24,6 +24,22 @@ export function updatePersonalInfo(form) {
   });
 }
 
+export function getUserByDeptId(deptId) {
+  return request({
+    url: '/system-user/get-user-dept-id',
+    method: 'post',
+    params: {deptId}
+  });
+}
+
+export function getDeptIdByUserId(userId) {
+  return request({
+    url: '/system-user/get-dept-user-id',
+    method: 'get',
+    params: {userId}
+  });
+}
+
 export function addUser(form) {
   return request({
     url: '/system-user/add-user',

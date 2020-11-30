@@ -32,42 +32,11 @@ export function deleteRole(roleId) {
   });
 }
 
-export function getRoleById(id) {
-  return request({
-    url: '/api/system/role/detail',
-    method: 'post',
-    data: { 'id': id }
-  })
-}
-
-export function treeUser() {
-  return request({
-    url: '/api/system/user/treeUser',
-    method: 'post'
-  })
-}
-
-export function getRoleUserByRoleId(data) {
-  return request({
-    url: '/api/system/userRole/list',
-    method: 'post',
-    data: data
-  })
-}
-
 export function getRoleMenuByRoleId(roleId) {
   return request({
     url: '/system-role/get-role-menu',
     method: 'post',
     params: {roleId}
-  })
-}
-
-export function saveUserRole(data) {
-  return request({
-    url: '/api/system/userRole/saveUserRole',
-    method: 'post',
-    data: data
   })
 }
 

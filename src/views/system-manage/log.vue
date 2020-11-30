@@ -188,13 +188,13 @@
         this.dialogVisible = true
       },
       handleDelete(row) {
-        let id = row.id
+        let id = row.logId
         deleteLog(id).then(response => {
-          if (response.code === 200) {
+          if (response.code === 20000) {
             this.getList()
-            this.submitOk(response.message)
+            this.submitOk(response.msg)
           } else {
-            this.submitFail(response.message)
+            this.submitFail(response.msg)
           }
         })
       },

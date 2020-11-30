@@ -45,11 +45,11 @@
 
       <div style="position:relative">
       <div class="tips">
-      <span>{{ $t('login.username') }} : admin</span>
+      <span>{{ $t('login.username') }} : 1111</span>
       <span>{{ $t('login.password') }} : 123456</span>
       </div>
       <div class="tips">
-      <span style="margin-right:18px;">{{ $t('login.username') }} : test</span>
+      <span style="margin-right:18px;">{{ $t('login.username') }} : code</span>
       <span>{{ $t('login.password') }} : 123456</span>
       </div>
 
@@ -93,7 +93,7 @@ export default {
     }
     return {
       loginForm: {
-        username: 'admin',
+        username: '1111',
         password: '123456'
       },
       loginRules: {
